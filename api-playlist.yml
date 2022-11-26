@@ -23,7 +23,7 @@ eureka:
          
 resilience4j.circuitbreaker:
   instances:
-    clientStudent:
+    clientMusic:
       registerHealthIndicator: true
       slidingWindowSize: 10
       permittedNumberOfCallsInHalfOpenState: 3
@@ -36,7 +36,7 @@ resilience4j.circuitbreaker:
 
 resilience4j.retry:
   instances:
-    clientStudent:
+    clientMusic:
       maxAttempts: 3
       waitDuration: 10s
       enableExponentialBackoff: true
